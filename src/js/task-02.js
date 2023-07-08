@@ -6,12 +6,16 @@ const ingredients = [
   'Herbs',
   'Condiments',
 ];
-const ingredientsList = document.querySelector('ingredients')
+
+const ingredientsList = document.querySelector('#ingredients')
 
 const listItems = ingredients.map((ingredient) => {
   const listItem = document.createElement('li')
-  listItem.textContent = ingredients
+  listItem.textContent = ingredient
   listItem.classList.add('item')
   return listItem
-});
-console.log(listItems)
+})
+
+listItems.forEach((item) => {
+  ingredientsList.appendChild(item)
+})

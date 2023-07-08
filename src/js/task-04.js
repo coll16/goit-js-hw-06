@@ -7,12 +7,12 @@ const spanValue = document.querySelector("#value")
 let counterValue = 0
 
 buttonDecrement.addEventListener("click", ()=>{
-    counterValue -= 1;
+    counterValue -= 1
     updateCounter()
 })
 
 buttonIncrement.addEventListener("click", ()=>{
-    counterValue += 1;
+    counterValue += 1
     updateCounter()
 })
 
